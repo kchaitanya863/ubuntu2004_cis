@@ -490,3 +490,15 @@ chrony_config_file:
 
 ### Firewall
 ubuntu2004cis_setup_firewall: false
+
+### added by kchaitanya863
+ubuntu1604cis_sshd_allow_users: ubuntu
+ubuntu1604cis_sshd_allow_groups: sshusersallow
+ubuntu1604cis_sshd_deny_users: sshdenied
+ubuntu1604cis_sshd_deny_groups: sshusersdeny
+
+ubuntu1604cis_enable_iptables: true
+ubuntu1604cis_iptables_rules_file: /etc/iptables/rules.v4
+ubuntu1604cis_firewall_default_deny_policy: true
+ubuntu1604cis_loopback_traffic_policy: true
+ubuntu1604cis_outbound_established_connections_policy: true
