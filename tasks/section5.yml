@@ -429,10 +429,10 @@
 #       regexp: '^{{item.name}}'
 #       line: '{{item.name}} {{item.value}}'
 #   with_items:
-#       - { name: 'AllowUsers' , value: '{{ ubuntu1604cis_sshd_allow_users }}' }
-#       - { name: 'AllowGroups' , value: '{{ ubuntu1604cis_sshd_allow_groups }}' }
-#       - { name: 'DenyUsers' , value: '{{ ubuntu1604cis_sshd_deny_users }}' }
-#       - { name: 'DenyGroups' , value: '{{ ubuntu1604cis_sshd_deny_groups }}' }
+#       - { name: 'AllowUsers' , value: '{{ ubuntu2004cis_sshd_allow_users }}' }
+#       - { name: 'AllowGroups' , value: '{{ ubuntu2004cis_sshd_allow_groups }}' }
+#       - { name: 'DenyUsers' , value: '{{ ubuntu2004cis_sshd_deny_users }}' }
+#       - { name: 'DenyGroups' , value: '{{ ubuntu2004cis_sshd_deny_groups }}' }
 #   notify: restart sshd
 #   when:
 #       - ubuntu2004cis_rule_5_2_17
